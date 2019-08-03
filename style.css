@@ -1,0 +1,137 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    height: 980px;
+    min-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;;
+}
+.head_1{
+    height:50px;
+    background-color: black;
+    color:white;
+    width: 100%;
+}
+#back{
+    height: 100%;
+    width: 960px;
+    margin: 0 auto;
+}
+#head_11{
+    position: relative;
+    bottom: 5px;
+}
+#head_12{
+    position: relative;
+    bottom:60px;
+    left: 750px;
+    z-index: 1;
+}
+#head_12 a{
+    right: 100px;
+    color: white;
+    margin-right: 5px;
+    font-size: 15px;
+}
+.head_2{
+    height: 200px;
+    background-color: lightpink;
+    position: relative;
+}
+.back2{
+    width: 120px;
+    position: absolute;
+    bottom: 5px;
+    right: 315px;
+    display: flex;
+    justify-content: space-around;
+}
+.cube{
+    border:1px solid black;
+    background-color: #F8F8FF;
+    opacity:0.50;
+    padding: 5px;
+    width: 10px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+}
+.foot{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(77,75,75,0.99);
+    position:absolute;
+    bottom: 0;
+    color:whitesmoke;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+
+}
+.menu{
+    height: 65px;
+    position: relative;
+    top:15px;
+    clear:both;
+    display: flex;
+}
+.leftline, .rightline{
+    margin: 0;
+    padding: 0;
+    flex: 1px;
+    border-bottom: 1px solid lightgray;
+    height: 35px;
+}
+.menu_960{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+.y-block{
+    border-radius:2em 2em 0em 0em;
+    border:1px solid lightgray;
+    padding: 12px;
+    width:50px;
+    height: 10px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #ece9e9;
+}
+#special{
+    background-color: white;
+    border-bottom: none;
+}
+#line{
+    border-bottom: 1px solid lightgray;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: white;
+    flex:1;
+}
+.block{
+    width:1000px;
+    height:500px;
+    margin: 0 auto;
+}
+#block1,#block2,#block3{
+    width: 100%;
+    display: flex;
+}
+#block1-1,#block1-2,#block1-3,.block2-1,.block3-1{
+    padding:80px;
+    border:1px solid lightgray;
+    flex: 1;
+    margin: 5px;
+}
+.b1{
+    margin-left: 0;
+}
+.b2{
+    margin-right: 0;
+}
+
+
