@@ -1,0 +1,634 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    min-width: 650px;
+}
+.button{
+    width: 100px;
+    height: 1020px;
+    background-color: #1d2531;
+    position: relative;
+  }
+.part1,.part2,.part3{
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 36px;
+    color: #b7c0cd;
+}
+.navigation{
+    width: 250px;
+    height: 1020px;
+    background-color: #222c3c;
+    float:left;
+}
+.m-content{
+    height: 1020px;
+    background-color: white;
+    max-width: 1200px;
+    flex: 1;
+}
+.t-button img{
+    width: 60px;
+    height: 60px;
+    margin:10px 20px;
+}
+.b-button{
+    width: 48px;
+    height: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 26px;
+    padding: 0;
+    margin: 0;
+    clear: both;
+
+}
+.b-button img{
+    width: 16px;
+    height: 16px;
+}
+#b02{
+    float:right;
+}
+.menu{
+    width: 191px;
+    height: 226px;
+    top:30px;
+    left:29px;
+    position: relative;
+}
+.part1{
+    position: absolute;
+    top:63px;
+    left: 29px;
+    width: 150px;
+    height: 154px;
+}
+#m-menu,.products,.dashboard{
+    font-family: ProximaNova-Semibold;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #5b6779;
+}
+#m-54{
+    position: absolute;
+    right: 0px;
+    top:72px;
+}
+#m-b02,#p-b02{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.divider{
+    width:190px;
+    height: 1px;
+    background-color:#2a3547;
+    position: absolute;
+    bottom: 0;
+    left:29px;
+}
+#divider2{
+    left: 0px;
+}
+.parta{
+    height: 255px;
+    width: 100%;
+    position:relative;
+}
+.partb{
+    width:191px;
+    height:195px;
+    position:relative;
+    top:23px;
+    left:29px;
+}
+.part2 {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    width: 90px;
+    height: 140px;
+}
+#p2special{
+    margin-top: -9px;
+}
+.bimg{
+    position: absolute;
+    top:40px;
+    left: 1px;
+    width: 18px;
+    height: 125px;
+}
+.bimg img{
+    margin: 8px 0;
+}
+#specialimg{
+    margin-top: 0px;
+}
+.partc{
+    width: 222px;
+    height: 203px;
+    position: relative;
+    top:45px;
+}
+.dashboard{
+    position: absolute;
+    top:7px;
+    left: 32px;
+}
+#d-b02{
+    position: absolute;
+    left: 206px;
+    top:0;
+}
+.part3{
+    position: absolute;
+    left: 31px;
+    top:46px;
+}
+#d21{
+    position: absolute;
+    right: 0;
+    top:45px;
+}
+#gth{
+    position: absolute;
+    right:0px;
+    top:120px;
+}
+.point{
+    width: 4px;
+    height: 4px;
+    background-color: #2399f1;
+    position: absolute;
+    left: 0;
+    top:60px;
+}
+.partd{
+    position: relative;
+    top:300px;
+    left: 30px;
+    width: 190px;
+    height: 31px;
+    font-family: ProximaNova-Semibold;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.goal{
+    float:left;
+}
+.money{
+    float:right;
+}
+#long{
+    width: 190px;
+    height: 4px;
+    background-color: #475364;
+    border-radius: 2px;
+    opacity: 0.3;
+    position: relative;
+    top:27px;
+}
+#fill{
+    width: 40px;
+    height: 4px;
+    background-image: linear-gradient(90deg,
+    #7f5be6 1%,
+    #9d8fe3 100%);
+    border-radius: 2px;
+
+}
+.top-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 0px 0px
+    rgba(0, 0, 0, 0.05);
+    overflow:hidden;
+    position: relative;
+}
+.Message {
+    font-family: ProximaNova-Regular;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #354052;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.top-right{
+    position: absolute;
+    width: 204px;
+    height: 58px;
+    top:11px;
+    right: 31px;
+}
+#photo1{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+#Jor{
+    position: absolute;
+    left: 69px;
+    top:13px;
+    width: 64px;
+    height: 11px;
+    font-family: ProximaNova-Semibold;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #2399f1;
+}
+#Adm{
+    position: absolute;
+    left: 69px;
+    top:34px;
+    width: 85px;
+    height: 10px;
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #b5b5b5;
+}
+.layout{
+    display: flex;
+}
+.left{
+    width: 400px;
+    height: 100%;
+    position: relative;
+}
+.x-divider{
+    width: 1px;
+    height: 939px;
+    background-color: #e6e9ec;
+}
+.right{
+    flex: 1;
+    height: 100%;
+}
+.input{
+    width: 340px;
+    height: 36px;
+    border-radius: 4px;
+    border: solid 1px #e5e8ee;
+    position: absolute;
+    top:15px;
+    left: 30px;
+    overflow: hidden;
+}
+.flex6{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    height: 869px;
+    top:70px;
+    width: 100%;
+}
+#search{
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    color: #9fa9ba;
+    opacity: 0.8;
+    position: absolute;
+    left:15px;
+    top:8px;
+}
+#searchjpg{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 16px;
+}
+.chat1,.chat2,.chat3,.chat4,.chat5,.chat6{
+    width: 100%;
+    height: 130px;
+    border-bottom-width: 1px ;
+    border-bottom-color: #e6e9ec;
+    border-bottom-style: solid;
+    position: relative;
+}
+.chat7{
+    width: 100%;
+    flex: 1;
+    position: relative;
+}
+.char1top{
+    position: absolute;
+    top:7px;
+    left: 10px;
+    width: 300px;
+    height: 70px;
+    overflow: hidden;
+}
+#photo2{
+    width:46px;
+    position: absolute;
+    left: 20px;
+    top:8px;
+}
+.point2{
+    width: 8px;
+    height: 8px;
+    background-color: #00aaff;
+    position: absolute;
+    top:23px;
+    left:87px;
+}
+#name1{
+    font-family: ProximaNova-Semibold;
+    font-size: 16px;
+    color: #2399f1;
+    position: absolute;
+    left: 102px;
+    top:17px;
+}
+#fromx{
+    left: 86px;
+    top:38px;
+}
+#contentx{
+    width:307px;
+}
+.from{
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    color: #b5b5b5;
+    position: absolute;
+    left: 96px;
+    top:46px;
+}
+.chat-content{
+    position: absolute;
+    left: 29px;
+    top:75px;
+    width: 347px;
+    height: 32px;
+    font-family: ProximaNova-Regular;
+    font-size: 12px;
+    line-height: 19px;
+    color: #585d68;
+}
+.meter{
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    color: #7f8fa4;
+    position: absolute;
+    top:26px;
+    right: 23px;
+}
+.c4{
+    position: absolute;
+    right: 21px;
+    top: 78px;
+}
+.f-photo{
+    width:46px;
+    position: absolute;
+    left: 30px;
+    top:16px;
+}
+.name{
+    font-family: ProximaNova-Semibold;
+    font-size: 16px;
+    position: absolute;
+    left: 96px;
+    top:25px;
+    color: #585d68;
+}
+.h-divider{
+    width: 100%;
+    height: 1px;
+    background-color:#e6e9ec;
+    position: absolute;
+    top:70px;
+}
+.top-content{
+    width: 100%;
+    height: 70px;
+    border-bottom-width: 1px ;
+    border-bottom-color: #e6e9ec;
+    border-bottom-style: solid;
+    position: relative;
+}
+.name-txt{
+    font-family: ProximaNova-Semibold;
+    font-size: 16px;
+    color: #585d68;
+}
+#topname{
+    font-size: 18px;
+    position: absolute;
+    top:27px;
+    left: 29px;
+}
+#date{
+    font-size: 14px;
+    bottom: 10px;
+    color: #56688a;
+    line-height: 32px;
+}
+#greenpoint{
+    position: absolute;
+    left: 139px;
+    top:37px;
+    width: 8px;
+    height: 8px;
+    background-color: #1bb934;
+}
+.right3{
+    position: relative;
+    top:20px;
+    left: 500px;
+    width: 250px;
+    height: 32px;
+    display: flex;
+}
+#base1{
+    width: 109px;
+    height: 32px;
+    margin-right: 8px;
+}
+#base2{
+    width: 73px;
+    height: 32px;
+    margin-left: 8px;
+    bottom: 35px;
+}
+.parti{
+    width: 600px;
+    height: 295px;
+    position: relative;
+}
+.people1{
+    width: 747px;
+    height: 88px;
+    position: absolute;
+    left: 26px;
+    top:18px;
+}
+.people2{
+    width: 747px;
+    height: 156px;
+    position: absolute;
+    left: 26px;
+    top:125px;
+}
+.Bes{
+    position: absolute;
+    left: 4px;
+    top:3px;
+    width: 46px;
+}
+.besname{
+    position: absolute;
+    top:8px;
+    left: 70px;
+    width: 400px;
+    height: 22px;
+    display: flex;
+}
+.time{
+    font-size: 12px;
+    font-family: ProximaNova-Semibold;
+    color: #7f8fa4;
+    line-height: 24px;
+    margin-left: 10px;
+}
+.con1,.con2{
+    position: absolute;
+    left: 70px;
+    top:32px;
+    font-family: ProximaNova-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 19px;
+}
+.con1{
+    width: 666px;
+    height: 51px;
+}
+.con2{
+    width: 677px;
+    height: 124px;
+}
+.Tuesday{
+    height: 27px;
+    width: 100%;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #e6e9ec;
+    line-height: 27px;
+}
+.Tue{
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    font-family: ProximaNova-Regular;
+    font-size: 14px;
+    color: #7f8fa4;
+    line-height: 27px;
+    background-color: white;
+    position: relative;
+    left: 340px;
+    bottom: 15px;
+}
+.partii{
+    height: 343px;
+    width: 100%;
+    position: relative;
+}
+#people2-1{
+    top:0;
+}
+#people2-2{
+    top:92px;
+    height: 239px;
+}
+.sce{
+    height: 100px;
+    width: 350px;
+    position: absolute;
+    left: 71px;
+    bottom: 0px;
+}
+.sce img{
+    width: 156px;
+    height: 100px;
+    margin-right: 13px;
+}
+#Tue2 {
+    margin-top: 21px;
+}
+#Tue2 div{
+    color: #2399f1;
+}
+#Tue2-2{
+    width: 125px;
+    height: 50px;
+    background-color: white;
+    left: 320px;
+}
+.partiii{
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+#people3-1{
+    top:0;
+}
+.input2{
+    width: 750px;
+    height: 54px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px #dfe3e9;
+    position: relative;
+    left: 29px;
+    top:102px;
+}
+#input-txt{
+    font-family: ProximaNova-Regular;
+    font-size: 13px;
+    position: absolute;
+    left: 72px;
+    top:22px;
+    color: #585d68;
+}
+.writing-icon {
+    width: 2px;
+    height: 15px;
+    background-color: #b7b7b7;
+    position: absolute;
+    left: 710px;
+    top:22px;
+}
+
+
+
+
+
+
+
+
+
+
+
