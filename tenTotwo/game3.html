@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3的小游戏etc</title>
+</head>
+<body>
+    <script>
+        for(var i=1; i<=100; i++)
+        {
+            if(i%3==0){
+                console.log("PA");
+            }
+            else {
+                console.log(i);
+            }
+        }
+        for(var i=1;i<=9;i++){
+            for(var j=1;j<=9;j++){
+                var x=i * j;
+                console.log(x);
+            }
+        }
+        var mydate=new Date();
+        if(mydate.getHours()>18){
+            console.log("晚上好！");
+        }
+        else if((mydate.gethour()>12)&&(mydate.gethour()<18)){
+            console.log("下午好！");
+        }
+        else{
+            alert("上午好！");
+        }
+    </script>
+</body>
+</html>
