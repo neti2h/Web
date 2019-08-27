@@ -1,0 +1,6 @@
+.parta{
+    display: flex;
+    flex: 1;
+    width: 300px;
+    flex-direction: column;
+}
