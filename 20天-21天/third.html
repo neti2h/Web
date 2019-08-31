@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+    <style>
+        .palette {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .palette li {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<ul class="palette">
+    <li style="background-color:crimson"  id="c1"></li>
+    <li style="background-color:bisque" ></li>
+    <li style="background-color:blueviolet" ></li>
+    <li style="background-color:coral" ></li>
+    <li style="background-color:chartreuse" ></li>
+    <li style="background-color:darkolivegreen" ></li>
+    <li style="background-color:cyan" ></li>
+    <li style="background-color:#194738" ></li>
+</ul>
+<p class="color-picker"></p>
+
+<div id="settime">
+    <div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+    <button id="fade-btn" value="out">淡出</button>
+</div>
+<script>
+    window.onload = function(){
+        var p = document.getElementsByClassName("color-picker")[0];
+        var ul = document.getElementsByClassName('palette')[0];
+        ul.addEventListener('click',function(e){
+            var t = e.target;
+            if(t.nodeName=="LI"){
+                 var color = t.style.backgroundColor;
+                 p.innerHTML = color;
+                 p.style.color = color;
+            }
+        });
+    }
+    var b = document.getElementById("fade-btn");
+    var s = 0;
+    var x = 0;
+    var t;
+    var toggole = true;
+    b.addEventListener("click",start);
+    function start() {
+        if(toggole){
+            s = 0;
+            blingcount();
+        }
+        else{
+            alert("hello");
+            s = 0;
+            bling();
+        }
+        toggole =!toggole;
+    }
+    function blingcount() {
+        s++;
+        x = (s/100).toFixed(2);
+        document.getElementById("fade-obj").style.opacity = 1 - x;
+        b.disabled = true;
+        t = setTimeout("blingcount()",50);
+        if (x == 1.00){
+            clearTimeout(t);
+            document.getElementById("fade-btn").innerHTML="淡入";
+            b.disabled = false;
+        }
+    }
+    function bling() {
+        s++;
+        x = (s/100).toFixed(2);
+        document.getElementById("fade-obj").style.opacity = x;
+        b.disabled = true;
+        t = setTimeout("bling()",50);
+        if (x == 1.00){
+            clearTimeout(t);
+            document.getElementById("fade-btn").innerHTML="淡出";
+            b.disabled = false;
+        }
+    }
+</script>
+</body>
+</html>

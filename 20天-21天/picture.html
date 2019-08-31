@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>帧动画</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* 设置承载背景图片的 div */
+        .ani{
+            border: 1px solid black;
+            width: 500px;
+            height: 480px;
+            max-width: 500px;
+            max-height: 480px;
+            margin: 10px auto;
+            /* 加载图像 */
+            background-image: url('ani.jpg');
+            /* 让它在 y 轴重复，这样可以实现连续的帧动画 */
+            background-repeat: repeat-y;
+            /* 设置初始位置 */
+            background-position: 0 0;
+        }
+    </style>
+</head>
+<body>
+<div class="ani">
+
+</div>
+
+<script type="text/javascript">
+    var aniPosition = document.querySelector('.ani');
+    var i=0;
+
+    function changeImage(){
+        //因为我的 div 的高设置为 480px，所有每次向下 480px切换到下一张图片
+        i += -480;
+        aniPosition.style.backgroundPosition = "0px " + i + "px";
+    }
+
+    function start(){
+        // 设置的时间间隔为 100
+        setInterval('changeImage()', 100);
+
+    }
+
+    // 加载初始化方法
+    window.onload = function(){
+        start();
+    }
+</script>
+</body>
+</html>

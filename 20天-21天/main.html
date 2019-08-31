@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20-21天</title>
+</head>
+<body>
+    <input id="name" type="text">
+    <button id="submit-btn" >Submit</button>
+    <p>注：输入姓名，回车则提交，Esc健则清空</p>
+    <script>
+        document.onkeydown = function (e) { // 回车提交表单
+// 兼容FF和IE和Opera
+            var theEvent = window.event || e;
+            var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+            if (code == 13) {
+                demo();
+            }
+            if(code == 27 ) {
+                clear();
+            }
+        }
+        document.getElementById("submit-btn").addEventListener("click",demo);
+        function demo() {
+            console.log(document.getElementById("name").value);
+        }
+        function clear(){
+            document.getElementById("name").value = "";
+        }
+
+    </script>
+</body>
+</html>
